@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formularz Dodania Obiektu do Wynajmu</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2 class="mt-4 mb-4">Dodaj Obiekt do Wynajmu</h2>
+    <form id="rentalForm">
+      <div class="form-group">
+        <label for="propertyName">Nazwa obiektu:</label>
+        <input type="text" id="propertyName" class="form-control">
+        <div class="error" id="propertyNameError"></div>
+      </div>
+      <div class="form-group">
+        <label for="description">Opis:</label>
+        <textarea id="description" class="form-control"></textarea>
+        <div class="error" id="descriptionError"></div>
+      </div>
+      <div class="form-group">
+        <label for="address">Adres:</label>
+        <input type="text" id="address" class="form-control">
+        <div class="error" id="addressError"></div>
+      </div>
+      <div class="form-group">
+        <label for="pricePerDay">Cena za dzień:</label>
+        <input type="number" id="pricePerDay" class="form-control">
+        <div class="error" id="pricePerDayError"></div>
+      </div>
+      <div class="form-group">
+        <label for="image">Zdjęcie:</label>
+        <input type="file" id="image" class="form-control">
+        <div class="error" id="imageError"></div>
+      </div>
+      <button type="submit" class="btn btn-primary">Dodaj</button>
+    </form>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
